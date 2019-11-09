@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		E30D02B22375D8A600A8569A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30D02B12375D8A600A8569A /* AppDelegate.swift */; };
 		E30D02B42375D8A600A8569A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30D02B32375D8A600A8569A /* SceneDelegate.swift */; };
-		E30D02B62375D8A600A8569A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30D02B52375D8A600A8569A /* ViewController.swift */; };
 		E30D02B92375D8A600A8569A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30D02B72375D8A600A8569A /* Main.storyboard */; };
 		E30D02BC2375D8A600A8569A /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E30D02BA2375D8A600A8569A /* Notes.xcdatamodeld */; };
 		E30D02BE2375D8A700A8569A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30D02BD2375D8A700A8569A /* Assets.xcassets */; };
 		E30D02C12375D8A700A8569A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30D02BF2375D8A700A8569A /* LaunchScreen.storyboard */; };
 		E30D02CC2375D8A800A8569A /* NotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30D02CB2375D8A800A8569A /* NotesTests.swift */; };
 		E30D02D72375D8A800A8569A /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30D02D62375D8A800A8569A /* NotesUITests.swift */; };
+		E394F75A2375DD63005398E0 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F7582375DD63005398E0 /* Note+CoreDataClass.swift */; };
+		E394F75B2375DD63005398E0 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F7592375DD63005398E0 /* Note+CoreDataProperties.swift */; };
+		E394F75D2375DFA7005398E0 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F75C2375DFA7005398E0 /* NotesViewController.swift */; };
+		E394F75F2375DFBC005398E0 /* SingleNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E394F75E2375DFBC005398E0 /* SingleNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		E30D02AE2375D8A600A8569A /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30D02B12375D8A600A8569A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E30D02B32375D8A600A8569A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E30D02B52375D8A600A8569A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E30D02B82375D8A600A8569A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E30D02BB2375D8A600A8569A /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		E30D02BD2375D8A700A8569A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		E30D02D22375D8A800A8569A /* NotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30D02D62375D8A800A8569A /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
 		E30D02D82375D8A800A8569A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E394F7582375DD63005398E0 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E394F7592375DD63005398E0 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E394F75C2375DFA7005398E0 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = SOURCE_ROOT; };
+		E394F75E2375DFBC005398E0 /* SingleNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNoteViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,17 @@
 		E30D02B02375D8A600A8569A /* Notes */ = {
 			isa = PBXGroup;
 			children = (
+				E394F7582375DD63005398E0 /* Note+CoreDataClass.swift */,
+				E394F7592375DD63005398E0 /* Note+CoreDataProperties.swift */,
 				E30D02B12375D8A600A8569A /* AppDelegate.swift */,
 				E30D02B32375D8A600A8569A /* SceneDelegate.swift */,
-				E30D02B52375D8A600A8569A /* ViewController.swift */,
 				E30D02B72375D8A600A8569A /* Main.storyboard */,
 				E30D02BD2375D8A700A8569A /* Assets.xcassets */,
 				E30D02BF2375D8A700A8569A /* LaunchScreen.storyboard */,
 				E30D02C22375D8A700A8569A /* Info.plist */,
 				E30D02BA2375D8A600A8569A /* Notes.xcdatamodeld */,
+				E394F75C2375DFA7005398E0 /* NotesViewController.swift */,
+				E394F75E2375DFBC005398E0 /* SingleNoteViewController.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -262,10 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E30D02B62375D8A600A8569A /* ViewController.swift in Sources */,
 				E30D02B22375D8A600A8569A /* AppDelegate.swift in Sources */,
+				E394F75A2375DD63005398E0 /* Note+CoreDataClass.swift in Sources */,
+				E394F75D2375DFA7005398E0 /* NotesViewController.swift in Sources */,
+				E394F75F2375DFBC005398E0 /* SingleNoteViewController.swift in Sources */,
 				E30D02B42375D8A600A8569A /* SceneDelegate.swift in Sources */,
 				E30D02BC2375D8A600A8569A /* Notes.xcdatamodeld in Sources */,
+				E394F75B2375DD63005398E0 /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
